@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Đọc dữ liệu từ file result.csv
-df = pd.read_csv('/Users/nangvuong/Documents/CODE PTIT/Python/result.csv', sep=';')
+df = pd.read_csv('result.csv', sep=';')
 
 # Thay thế các giá trị NaN bằng 0
 df.fillna(0, inplace=True)

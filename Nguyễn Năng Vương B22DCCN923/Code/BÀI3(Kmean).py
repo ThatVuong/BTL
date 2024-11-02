@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import os
 
 # Đọc file CSV và thay thế NaN bằng 0
-file_path = '/Users/nangvuong/Documents/CODE PTIT/Python/result.csv'
+file_path = 'result.csv'
 df = pd.read_csv(file_path, sep=';')
 df = df.fillna(0)
 

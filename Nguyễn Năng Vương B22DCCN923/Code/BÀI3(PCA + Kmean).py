@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import os
 
 # Đọc file CSV và thay thế NaN bằng 0
-file_path = '/Users/nangvuong/Documents/CODE PTIT/Python/result.csv'
+file_path = 'result.csv'
 df = pd.read_csv(file_path, sep=';')
 df = df.fillna(0)
 
@@ -25,7 +25,7 @@ pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 
 # Áp dụng thuật toán K-means
-num_clusters = 3  # Số nhóm bạn muốn phân loại
+num_clusters = 4  # Số nhóm bạn muốn phân loại
 kmeans = KMeans(n_clusters=num_clusters, random_state=42)
 df['Cluster'] = kmeans.fit_predict(X_scaled)
 
@@ -43,6 +43,7 @@ plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
 plt.colorbar(scatter, label='Cluster')
 plt.grid(True)
+plt.show()
 
 # Lưu hình ảnh vào thư mục
 plt.savefig(os.path.join(output_dir, 'pca_kmeans_clustering_players.png'))

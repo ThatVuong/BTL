@@ -48,7 +48,7 @@ def main():
     attributes = args.Attribute.split(';')
 
     # Đọc dữ liệu từ file CSV và chuyển NaN thành 0
-    df = pd.read_csv('/Users/nangvuong/Documents/CODE PTIT/Python/result.csv', sep=';')
+    df = pd.read_csv('result.csv', sep=';')
     df = df.fillna(0)  # Chuyển NaN thành 0
 
     # Kiểm tra sự tồn tại của các cầu thủ

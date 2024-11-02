@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Đọc file result.csv
-df = pd.read_csv('/Users/nangvuong/Documents/CODE PTIT/Python/result.csv', sep=';')
+df = pd.read_csv('result.csv', sep=';')
 
 # Lọc các cột chỉ số cần xếp hạng
 stat_columns = df.select_dtypes(include=['float64', 'int64']).columns

@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Đọc dữ liệu từ file results2.csv
-df = pd.read_csv('/Users/nangvuong/Documents/CODE PTIT/Python/results2.csv', sep=';')
+df = pd.read_csv('results2.csv', sep=';')
 
 # Lọc các cột có chỉ số trung bình
 mean_columns = [col for col in df.columns if col.startswith('Mean of')]

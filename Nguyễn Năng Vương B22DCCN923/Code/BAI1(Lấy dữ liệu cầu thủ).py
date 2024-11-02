@@ -1013,5 +1013,5 @@ df['First Name'] = df['Player'].apply(lambda x: x.split()[0])  # Lấy tên đ�
 df = df.sort_values(by=['First Name', 'Age'], ascending=[True, False])
 df = df.drop(columns=['First Name'])
 # Kiểm tra kết quả
-df.to_csv('/Users/nangvuong/Documents/CODE PTIT/Python/result.csv', sep=';', index=False)
+df.to_csv('result.csv', sep=';', index=False)
 print('Lấy dữ liệu thành công')

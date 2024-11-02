@@ -59,6 +59,6 @@ for page in range(2, 25):
     print(f"Data from page {page} added to DataFrame.")
 
 # Lưu dữ liệu vào file CSV
-output_path = '/Users/nangvuong/Documents/CODE PTIT/Python/test.csv'
+output_path = 'test.csv'
 all_players_data.to_csv(output_path, sep=';', index=False, encoding='utf-8')
 print(f"Data saved to {output_path}")

@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # Đọc file CSV và thay thế NaN bằng 0
-file_path = '/Users/nangvuong/Documents/CODE PTIT/Python/result.csv'
+file_path = 'result.csv'
 df = pd.read_csv(file_path, sep=';')
 df = df.fillna(0)
 
@@ -48,6 +48,7 @@ def plot_histograms(data, columns, title, file_name):
     plt.tight_layout() 
     plt.suptitle(title, fontsize=16)
     plt.subplots_adjust(top=0.9)
+    plt.show()
     plt.savefig(file_name)  # Lưu hình ảnh vào file
     plt.close()  # Đóng hình để giải phóng bộ nhớ
 
